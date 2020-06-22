@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plaindrome number</title>
+</head>
+
+<body>
+
+
+
+    <br>
+    <h1>find palindrome number</h1>
+    Enter The Number :<input type="text" name="n" id="N" />
+
+    <br>
+    <button onClick="pali()">check</button>
+    <span id="r"></span>
+
+
+
+    <script>
+        function pali() {
+            var rem, temp, final = 0;
+            var number = Number(document.getElementById("N").value);
+
+            temp = number;
+            while (number > 0) {
+                rem = number % 10;
+                number = parseInt(number / 10);
+                final = final * 10 + rem;
+            }
+            if (final == temp) {
+                document.getElementById("r").innerHTML = " Number is palindrome";
+            } else {
+                document.getElementById("r").innerHTML = " Number is  not palindrome";
+            }
+        }
+    </script>
+</body>
+
+</html>
