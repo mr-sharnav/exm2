@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <h1>multiplay into two number</h1>
+    <input type="number" id="num1">
+    <input type="number" id="num22">
+    <button onclick="multi()">result</button>
+    <hr>
+    <span id="r"></span>
+
+
+    <script type="text/javascript">
+        function multi() {
+            var a, b, result;
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+            result = a * b;
+            document.getElementById("r").innerHTML = a + " * " + b + " = " + result;
+        }
+    </script>
+</body>
+
+</html>
